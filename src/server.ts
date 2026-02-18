@@ -57,6 +57,8 @@ server.get<{ Params: VillainsParams }>("/villains/:id", async (request, response
     }
 });
 
-server.listen({ port: 3333 }, () => {
-    console.log("Server is running on port 3333");
-})
+const port = Number(process.env.PORT) || 3333;
+
+server.listen({ port, host: "0.0.0.0" }, () => {
+  console.log(`Server is running on port ${port}`);
+});
