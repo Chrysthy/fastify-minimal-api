@@ -13,7 +13,7 @@ server.register(cors, {
 server.get("/heroes", async (request, response) => {
     response.type("application/json").code(200)
 
-    return heroes;
+    return { heroes };
 });
 
 server.get("/villains", async (request, response) => {
@@ -26,7 +26,7 @@ interface HeroParams {
     id: string;
 }
 
-server.get<{ Params: HeroParams }>("/heros/:id", async (request, response) => {
+server.get<{ Params: HeroParams }>("/heroes/:id", async (request, response) => {
     const id = parseInt(request.params.id);
     const hero = heroes.find(h => h.id === id);
 
