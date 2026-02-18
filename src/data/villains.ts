@@ -1,4 +1,4 @@
-const villains = [
+export const villains = [
     { id: 1, name: "Albert Wesker", weapon: "superhuman strength" },
     { id: 2, name: "Nemesis", weapon: "rocket launcher" },
     { id: 3, name: "William Birkin", weapon: "G-virus" },

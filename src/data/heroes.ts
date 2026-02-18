@@ -1,4 +1,4 @@
-const heroes = [
+export const heroes = [
     { id: 1, name: "Leon S. Kennedy", weapon: "handgun" },
     { id: 2, name: "Claire Redfield", weapon: "shotgun" },
     { id: 3, name: "Jill Valentine", weapon: "pistol" },

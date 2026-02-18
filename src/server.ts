@@ -1,5 +1,7 @@
 import fastify from "fastify";
 import cors from "@fastify/cors";
+import { heroes } from "./data/heroes";
+import { villains } from "./data/villains";
 
 const server = fastify({ logger: true });
 
@@ -60,5 +62,5 @@ server.get<{ Params: VillainsParams }>("/villains/:id", async (request, response
 const port = Number(process.env.PORT) || 3333;
 
 server.listen({ port, host: "0.0.0.0" }, () => {
-  console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port ${port}`);
 });
