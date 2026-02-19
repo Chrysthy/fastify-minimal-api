@@ -89,3 +89,9 @@ This code source was developed with the following items:
 - Start the server by running <kbd>start:dev</kbd>
 
 <br>
+
+## 📜 License
+
+* This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
+
+<br>
